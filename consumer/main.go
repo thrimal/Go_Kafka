@@ -12,12 +12,12 @@ import (
 
 var (
 	//List of brokers to connect
-	brokerList        = kingpin.Flag("brokerList", "List of brokers to connect").Default("localhost:9092").Strings()
+	brokerList = kingpin.Flag("brokerList", "List of brokers to connect").Default("localhost:9092").Strings()
 	//Define Topic name
-	topic             = kingpin.Flag("topic", "Topic name").Default("important").String()
+	topic = kingpin.Flag("topic", "Topic name").Default("important").String()
 	//Define Partition number
-	partition         = kingpin.Flag("partition", "Partition number").Default("0").String()
-	offsetType        = kingpin.Flag("offsetType", "Offset Type (OffsetNewest | OffsetOldest)").Default("-1").Int()
+	partition  = kingpin.Flag("partition", "Partition number").Default("0").String()
+	offsetType = kingpin.Flag("offsetType", "Offset Type (OffsetNewest | OffsetOldest)").Default("-1").Int()
 	//Message counter start from
 	messageCountStart = kingpin.Flag("messageCountStart", "Message counter start from:").Int()
 )

@@ -14,9 +14,9 @@ deps-install:
 step 4: run-producer (in intellij terminal)
 ## run-producer: Run consumer
 to run-producer:
-	go run cmd/producer/main.go
+	go run producer/main.go
 
 step 5: run-consumer (in intellij terminal)
 ## run-consumer: Run consumer
 to run-consumer:
-	go run cmd/consumer/main.go
+	go run consumer/main.go

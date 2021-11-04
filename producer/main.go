@@ -12,9 +12,9 @@ var (
 	//List of brokers to connect
 	brokerList = kingpin.Flag("brokerList", "List of brokers to connect").Default("localhost:9092").Strings()
 	//create a Topic
-	topic      = kingpin.Flag("topic", "Topic name").Default("important").String()
+	topic = kingpin.Flag("topic", "Topic name").Default("important").String()
 	//retry limit
-	maxRetry   = kingpin.Flag("maxRetry", "Retry limit").Default("5").Int()
+	maxRetry = kingpin.Flag("maxRetry", "Retry limit").Default("5").Int()
 )
 
 func main() {
