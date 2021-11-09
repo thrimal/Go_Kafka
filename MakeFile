@@ -12,7 +12,7 @@ deps-install:
 	go mod download
 
 step 4: run-producer (in intellij terminal)
-## run-producer: Run consumer
+## run-producer: Run producer
 to run-producer:
 	go run producer/main.go
 
